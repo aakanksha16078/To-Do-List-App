@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0d0d0d;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1{
+    color: #b30000;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+    text-shadow: 0 0 10px rgba(179,0,0,0.5);
+}
+
+p{
+    color: #cc0000;
+    margin-bottom: 25px;
+}
+
+#to-doinput{
+    width: 350px;
+    max-width: 90%;
+    padding: 12px;
+    border: 1px solid #5c0011;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #1a1a1a;
+    color: #ff4d4d;
+    box-shadow: 0 0 10px rgba(128,0,32,0.3);
+}
+
+#to-doinput::placeholder{
+    color: #aa5555;
+}
+
+#btn{
+    padding: 12px 20px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5c0011;
+    color: #ffcccc;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#btn:hover{
+    background-color: #800020;
+    transform: translateY(-2px);
+}
+
+#to-dolist{
+    list-style: none;
+    width: 500px;
+    max-width: 95%;
+    margin: 30px auto;
+}
+
+#to-dolist li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2b000b;
+    color: #ff6666;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(179,0,0,0.3);
+    box-shadow: 0 0 15px rgba(128,0,32,0.4);
+}
+
+#to-dolist span{
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #ff4d4d;
+}
+
+#to-dolist button{
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#to-dolist button:hover{
+    background-color: #b30000;
+    transform: translateY(-2px);
+}
+
+input[type="checkbox"]{
+    transform: scale(1.2);
+    cursor: pointer;
+    accent-color: #b30000;
+}
